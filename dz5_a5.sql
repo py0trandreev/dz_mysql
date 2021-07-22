@@ -1,0 +1,116 @@
+DROP DATABASE IF EXISTS example;
+CREATE DATABASE example;
+USE example;
+
+
+DROP TABLE IF EXISTS catalogs;
+
+CREATE TABLE catalogs (
+	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    name VARCHAR(50)
+
+) COMMENT 'каталоги';
+
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('1', 'impedit');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('2', 'explicabo');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('3', 'quia');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('4', 'ut');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('5', 'rerum');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('6', 'voluptatum');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('7', 'ullam');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('8', 'cumque');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('9', 'laudantium');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('10', 'sed');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('11', 'molestias');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('12', 'aliquid');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('13', 'ab');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('14', 'ex');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('15', 'sint');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('16', 'explicabo');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('17', 'dolor');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('18', 'rem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('19', 'debitis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('20', 'et');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('21', 'impedit');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('22', 'labore');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('23', 'consectetur');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('24', 'similique');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('25', 'occaecati');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('26', 'vero');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('27', 'facilis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('28', 'quaerat');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('29', 'aliquid');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('30', 'voluptatem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('31', 'praesentium');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('32', 'et');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('33', 'voluptas');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('34', 'qui');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('35', 'qui');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('36', 'debitis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('37', 'et');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('38', 'vitae');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('39', 'vero');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('40', 'asperiores');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('41', 'repellat');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('42', 'reiciendis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('43', 'quo');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('44', 'autem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('45', 'voluptatem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('46', 'quia');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('47', 'delectus');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('48', 'qui');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('49', 'et');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('50', 'quo');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('51', 'assumenda');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('52', 'laboriosam');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('53', 'eaque');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('54', 'autem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('55', 'repellendus');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('56', 'harum');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('57', 'est');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('58', 'qui');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('59', 'sit');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('60', 'magnam');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('61', 'fugiat');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('62', 'voluptate');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('63', 'omnis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('64', 'omnis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('65', 'nesciunt');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('66', 'sed');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('67', 'voluptatem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('68', 'enim');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('69', 'est');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('70', 'iste');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('71', 'quisquam');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('72', 'voluptatem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('73', 'ex');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('74', 'quas');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('75', 'culpa');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('76', 'voluptatum');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('77', 'quisquam');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('78', 'maiores');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('79', 'ex');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('80', 'ea');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('81', 'perferendis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('82', 'ea');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('83', 'architecto');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('84', 'minima');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('85', 'quod');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('86', 'aspernatur');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('87', 'et');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('88', 'dicta');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('89', 'officiis');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('90', 'animi');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('91', 'aliquam');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('92', 'a');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('93', 'dolorem');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('94', 'harum');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('95', 'odit');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('96', 'eos');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('97', 'molestiae');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('98', 'sint');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('99', 'pariatur');
+INSERT INTO `catalogs` (`id`, `name`) VALUES ('100', 'nobis');
+
+
+SELECT * FROM catalogs WHERE id IN (5, 1, 2) ORDER BY FIELD(id, 5, 1, 2);
