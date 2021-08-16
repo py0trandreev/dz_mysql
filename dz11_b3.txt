@@ -1,0 +1,46 @@
+> db.createCollection('catalogs')
+{ "ok" : 1 }
+> db.createCollection('products')
+{ "ok" : 1 }
+> show tables
+catalogs
+products
+> db.catalogs.insert({name: 'Фрукты'})
+WriteResult({ "nInserted" : 1 })
+> db.catalogs.insert({name: 'Овощи'})
+WriteResult({ "nInserted" : 1 })
+> db.catalogs.find()
+{ "_id" : ObjectId("611ab1af7900fe708bd31df2"), "name" : "Фрукты" }
+{ "_id" : ObjectId("611ab1b87900fe708bd31df3"), "name" : "Овощи" }
+> db.products.insert(
+... {
+... name: "яблоки",
+... price: 100.00,
+... catalog_id: new ObjectId("611ab1af7900fe708bd31df2")
+... }
+... );
+WriteResult({ "nInserted" : 1 })
+> db.products.insert(
+... {
+... name: "груши",
+... price: 150.00,
+... catalog_id: new ObjectId("611ab1af7900fe708bd31df2")
+... }
+... );
+WriteResult({ "nInserted" : 1 })
+> db.products.insert(
+...     {
+...         name: "томаты",
+... price: 50.00,
+... catalog_id: new ObjectId("611ab1b87900fe708bd31df3")
+... }
+... );
+WriteResult({ "nInserted" : 1 })
+> db.catalogs.find()
+{ "_id" : ObjectId("611ab1af7900fe708bd31df2"), "name" : "Фрукты" }
+{ "_id" : ObjectId("611ab1b87900fe708bd31df3"), "name" : "Овощи" }
+> db.products.find()
+{ "_id" : ObjectId("611ab2827900fe708bd31df4"), "name" : "яблоки", "price" : 100, "catalog_id" : ObjectId("611ab1af7900fe708bd31df2") }
+{ "_id" : ObjectId("611ab2f27900fe708bd31df5"), "name" : "груши", "price" : 150, "catalog_id" : ObjectId("611ab1af7900fe708bd31df2") }
+{ "_id" : ObjectId("611ab34d7900fe708bd31df6"), "name" : "томаты", "price" : 50, "catalog_id" : ObjectId("611ab1b87900fe708bd31df3") }
+>

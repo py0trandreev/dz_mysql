@@ -1,0 +1,32 @@
+127.0.0.1:6379> HSET emails 'alex' 'alex@mail.ru'
+(integer) 0
+127.0.0.1:6379> HSET emails 'max' 'max@yandex.ru'
+(integer) 0
+127.0.0.1:6379> HSET emails 'john' 'john@gmail.com'
+(integer) 0
+127.0.0.1:6379> HGETALL emails
+1) "alex"
+2) "alex@mail.ru"
+3) "max"
+4) "max@yandex.ru"
+5) "john"
+6) "john@gmail.com"
+127.0.0.1:6379> HGET emails 'alex'
+"alex@mail.ru"
+
+
+127.0.0.1:6379> HSET users 'alex@mail.ru' 'alex'
+(integer) 1
+127.0.0.1:6379> HSET users 'max@yandex.ru' 'max'
+(integer) 1
+127.0.0.1:6379> HSET users 'john@gmail.com' 'john'
+(integer) 1
+127.0.0.1:6379> HGETALL users
+1) "alex@mail.ru"
+2) "alex"
+3) "max@yandex.ru"
+4) "max"
+5) "john@gmail.com"
+6) "john"
+127.0.0.1:6379> HGET users 'john@gmail.com'
+"john"
