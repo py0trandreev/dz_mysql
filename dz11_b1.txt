@@ -1,0 +1,20 @@
+127.0.0.1:6379> HINCRBY addresses '123.215.96.176' 1
+(integer) 1
+127.0.0.1:6379> HGETALL addresses
+1) "123.215.96.176"
+2) "1"
+127.0.0.1:6379> HINCRBY addresses '123.215.96.176' 1
+(integer) 2
+127.0.0.1:6379> HGETALL addresses
+1) "123.215.96.176"
+2) "2"
+127.0.0.1:6379> HINCRBY addresses '127.0.0.2' 1
+(integer) 1
+127.0.0.1:6379> HGETALL addresses
+1) "123.215.96.176"
+2) "2"
+3) "127.0.0.2"
+4) "1"
+
+127.0.0.1:6379> HGETALL addresses '123.215.96.176'
+"2"
